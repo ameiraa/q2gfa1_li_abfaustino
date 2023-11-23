@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav span {
+    color: white;
+}
+
+.cb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+nav{
+     background-color: #fda7e3;
+     display: flex;
+     justify-content: space-around;
+     padding-top: 1vw;
+     padding-bottom: 1vw;
+}
+
+.links a{
+    margin-left: 1vw;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
+
+#vidbg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.banner{
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 10vw;
+    padding: 5vw;
+}
+
+.bannertxt{
+    font-size: 40pt;
+    font-weight: 750;
+    text-shadow: white 2px 2px;
+}
+
+article{
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+article p{
+    font-weight: 600;
+    text-shadow: white 1px 1px;
+}
+
+footer{
+    background-color: #fda7e3;
+    text-align: center;
+    position: relative;
+    bottom: 0vw;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    height: 66px;
+}
+
+.icon{
+    background: url(../images/sprite3.png) no-repeat;
+    width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+#facebook{
+    background-position: -587px -72px;
+}
+#linkedin{
+    background-position: -513px -72px;
+}
+#heart{
+    background-position: -587px -221px;
+}
+#youtube{
+    background-position: -439px -221px;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: #e267b3;
+    }
+    .pagetitle{
+        background-color: #e267b3;
+        padding: 1vw;
+        color: white;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #e267b3;
+        min-width: 75vw;
+        box-shadow: 0px 8px 16px 0px rgb(0, 0, 0.2);        
+    }
+    .links a{
+        color: white;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        display: block;
+    }
+    .links a:hover{background-color: #bd4a91; transition: 0.5s;}
+    nav:hover .links{display: block; transition: 0.5s;}
+    nav:hover .pagetitle{background-color: #e267b3; transition: 0.5s;} 
+}
